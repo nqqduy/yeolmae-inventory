@@ -12,7 +12,7 @@ interface I{InputValue}UseCaseOutPut {}
 export class {InputValue}UseCase {
   constructor(
     @InjectRepository(Entity)
-    private readonly useRepository: Repository<Entity>,
+    private readonly repository: Repository<Entity>,
   ) {}
 
   async execute(data: I{InputValue}UseCaseInput): Promise<I{InputValue}UseCaseOutPut> {}
