@@ -1,0 +1,3 @@
+public static getErrorsForSwagger(): IParameterApiErrorResponse[] {
+    return [{__ARRAY_VALUE}];
+}

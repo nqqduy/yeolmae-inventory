@@ -1,0 +1,16 @@
+import { Injectable } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
+import { {InputValue}Entity } from './entities/{input-value}-entity';
+
+/**
+ * @description Contain functions can be used in common with other services
+ */
+@Injectable()
+export class {InputValue}SharedService {
+  constructor(
+    @InjectRepository({InputValue}Entity)
+    private readonly {inputValue}Repository: Repository<{InputValue}Entity>
+  ) {}
+
+}

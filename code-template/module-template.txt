@@ -1,0 +1,12 @@
+import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { {InputValue}Entity } from './entities/{input-value}-entity';
+import { {InputValue}Controller } from './api/http/controllers/{input-value}-controller';
+import { {InputValue}SharedService } from './{input-value}-shared-service';
+@Module({
+  imports: [TypeOrmModule.forFeature([{InputValue}Entity])],
+  controllers: [{InputValue}Controller ],
+  providers: [{InputValue}SharedService],
+  exports: [{InputValue}SharedService]
+})
+export class {InputValue}Module {}

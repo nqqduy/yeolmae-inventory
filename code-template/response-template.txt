@@ -1,0 +1,14 @@
+import { ApiProperty } from '@nestjs/swagger';
+import { BaseResponse } from 'src/common/responses/base-response';
+
+export class {InputValue}Response implements BaseResponse {
+    constructor(data: {  }) {
+        
+      }
+    
+      toJSON(): Record<string, any> {
+        return {
+         
+        };
+      }
+}

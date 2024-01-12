@@ -1,0 +1,4 @@
+{
+    errorCode: {__ERROR_CODE},
+    message: '{__ERROR_MESSAGE}',
+}

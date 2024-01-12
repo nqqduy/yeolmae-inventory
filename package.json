@@ -1,0 +1,20 @@
+{
+  "name": "yeolmae-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "command.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nqqduy/yeolmae-inventory"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "inquirer": "^9.2.12"
+  }
+}

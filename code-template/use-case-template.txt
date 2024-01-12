@@ -1,0 +1,19 @@
+import { Repository } from 'typeorm';
+import { InjectRepository } from '@nestjs/typeorm';
+
+interface I{InputValue}UseCaseInput {}
+interface I{InputValue}UseCaseOutPut {}
+
+/**
+ * @param data I{InputValue}UseCaseInput
+ * @description 
+ * @returns I{InputValue}UseCaseOutPut
+ */
+export class {InputValue}UseCase {
+  constructor(
+    @InjectRepository(Entity)
+    private readonly useRepository: Repository<Entity>,
+  ) {}
+
+  async execute(data: I{InputValue}UseCaseInput): Promise<I{InputValue}UseCaseOutPut> {}
+}

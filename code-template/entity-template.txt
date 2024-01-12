@@ -1,0 +1,9 @@
+import { {InputValue}Model } from '../models/{input-value}-model';
+import { BaseTimestampEntity } from 'src/common/entity/base-timestamp-entity';
+
+export class {InputValue}Entity extends BaseTimestampEntity<{InputValue}Model> {
+
+    public toModel():  {InputValue}Model  {
+        return  {InputValue}Model.createInstance(this);
+      }
+}

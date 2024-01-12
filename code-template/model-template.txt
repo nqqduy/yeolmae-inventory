@@ -1,0 +1,21 @@
+import { {InputValue}Entity } from '../entities/{input-value}-entity';
+import { BaseModel } from 'src/common/model/base-model';
+
+export class {InputValue}Model extends BaseModel<{InputValue}Entity>{
+    constructor({inputValue}Entity?: {InputValue}Entity) {
+        if (!{inputValue}Entity) {
+          return;
+        }
+        super()
+      }
+
+    public static createInstance( {inputValue}Entity: {InputValue}Entity): {InputValue}Model {
+        return new {InputValue}Model ({inputValue}Entity);
+    }
+    
+    public toEntity(): {InputValue}Entity {
+        const {inputValue}Entity: {InputValue}Entity = new {InputValue}Entity();
+
+        return {inputValue}Entity;
+    }
+}
